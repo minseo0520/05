@@ -5,19 +5,18 @@
 
 int main(void)
 {
-	char c;
-	int num=0;
+	int a;
+	int sum=0;
+	int i;
 	
-	printf("input a string:");
-	scanf("%c", &c);
+	printf("input a number:");
+	scanf("%d", &a);
 	
-	while((c=getchar())!='\n')
+	for(i=0; i<=a; i++)
 	{
-		if(c>='0'&&c<='9')
-		num=num+1;	
+		sum=sum+i;
 	}
-		printf("the number of digits is %d", num);
-	
+	printf("The result is %d", sum);
 	
 	return 0; 
 }
