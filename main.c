@@ -5,18 +5,25 @@
 
 int main(void)
 {
-	int a;
-	int sum=0;
+	int answer = 59;
 	int i;
+	int trial=0;
 	
-	printf("input a number:");
-	scanf("%d", &a);
-	
-	for(i=0; i<=a; i++)
+	do
 	{
-		sum=sum+i;
+		printf("Guess a number:");
+	    scanf("%d", &i);
+	    
+	    if(i>59)
+	    printf("high!\n");
+	    
+	    else if(i<59)
+	    printf("low!\n");
+	    
+	    trial = trial + 1;
 	}
-	printf("The result is %d", sum);
+	while(i!=59);
+	printf("Congratulation! trials:%d", trial);
 	
-	return 0; 
+	return 0;
 }
