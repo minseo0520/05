@@ -10,10 +10,10 @@ int main(void)
 	scanf("%d", &a);
 	
 	if(a>0)
-	printf("양수입니다.\n");
+	printf("절대값은 %d 입니다.\n", a);
 	
 	else if(a<0)
-	printf("음수입니다.\n"); 
+	printf("절댓값은 %d 입니다.\n", -a); 
 	
 	else
 	printf("0입니다.\n");
